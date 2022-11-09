@@ -16,7 +16,7 @@ namespace Ritsuki
         [SerializeField]
         private Sprite pictureUp;
         [SerializeField]
-        private Sprite pictureMIddle;
+        private Sprite pictureMiddle;
         [SerializeField]
         private Sprite pictureDown;
         [SerializeField, Header("圖片渲染元件")]
@@ -58,7 +58,7 @@ namespace Ritsuki
             if (v == 0)
             {
                 // print("中間");
-                spr.sprite = pictureMIddle;
+                spr.sprite = pictureMiddle;
             }
         }
     }
