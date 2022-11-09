@@ -1,17 +1,17 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 namespace Ritsuki
 {
     /// <summary>
-    /// ¼Ä¤Hµo®g¨t²Î
+    /// æ•µäººç™¼å°„ç³»çµ±
     /// </summary>
     public class EnemyFireSystem : FireSystemBase
     {
-        [SerializeField, Header("¤l¼u¥Í¦¨¶¡¹j"), Range(0, 3)]
+        [SerializeField, Header("å­å½ˆç”Ÿæˆé–“éš”"), Range(0, 3)]
         private float interval = 1.5f;
         private void Awake()
         {
-            //©µ¿ğ­«½Æ©I¥s("¤èªk¦WºÙ"¡A©µ¿ğ®É¶¡¡A­«½ÆÀW²v)
+            //å»¶é²é‡è¤‡å‘¼å«("æ–¹æ³•åç¨±"ï¼Œå»¶é²æ™‚é–“ï¼Œé‡è¤‡é »ç‡)
             InvokeRepeating("SpawnBullet", 0, interval);
         }
     }

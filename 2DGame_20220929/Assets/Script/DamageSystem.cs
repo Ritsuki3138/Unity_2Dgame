@@ -1,37 +1,37 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 namespace Ritsuki
 {
     public class DamageSystem : MonoBehaviour
     {
-        [SerializeField, Header("Ãz¬µ¹w»sª«")]
+        [SerializeField, Header("çˆ†ç‚¸é è£½ç‰©")]
         private GameObject perfabExplosion;
-        [SerializeField, Header("¸I¨ì·|Ãz¬µªº¦WºÙ")]
+        [SerializeField, Header("ç¢°åˆ°æœƒçˆ†ç‚¸çš„åç¨±")]
         private string nameTarget;
 
-        //¸I¼²¶}©l®É°õ¦æ¤@¦¸
+        //ç¢°æ’é–‹å§‹æ™‚åŸ·è¡Œä¸€æ¬¡
         private void OnCollisionEnter2D(Collision2D collision)
         {
             print(collision.gameObject.name);
-            // ¦pªG¸I¨ìªºª«¥ó¦WºÙ ¥]§t nameTarget ´NÃz¬µ¨Ã§R°£
+            // å¦‚æœç¢°åˆ°çš„ç‰©ä»¶åç¨± åŒ…å« nameTarget å°±çˆ†ç‚¸ä¸¦åˆªé™¤
             if (collision.gameObject.name.Contains(nameTarget))
             {
-                //¥Í¦¨Ãz¬µ¹w»sª« ®y¼Ğ»P¨¤«× ¸ò¦¹ª«¥ó¬Û¦P
+                //ç”Ÿæˆçˆ†ç‚¸é è£½ç‰© åº§æ¨™èˆ‡è§’åº¦ è·Ÿæ­¤ç‰©ä»¶ç›¸åŒ
                 Instantiate(perfabExplosion, transform.position, transform.rotation);
 
-                // §R°£ Destory
-                // ¦¹ª«¥ó gameObject
+                // åˆªé™¤ Destory
+                // æ­¤ç‰©ä»¶ gameObject
                 Destroy(gameObject);
             }
         }
 
-        //¸I¼²Â÷¶}®É°õ¦æ¤@¦¸
+        //ç¢°æ’é›¢é–‹æ™‚åŸ·è¡Œä¸€æ¬¡
         private void OnCollisionExit2D(Collision2D collision)
         {
 
         }
 
-        //¸I¼²®É«ùÄò°õ¦æ
+        //ç¢°æ’æ™‚æŒçºŒåŸ·è¡Œ
         private void OnCollisionStay2D(Collision2D collision)
         {
             

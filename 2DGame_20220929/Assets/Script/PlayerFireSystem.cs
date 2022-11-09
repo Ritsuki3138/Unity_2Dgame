@@ -1,19 +1,19 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 namespace Ritsuki
 {
     /// <summary>
-    /// ª±®aµo®g¨t²Î
+    /// ç©å®¶ç™¼å°„ç³»çµ±
     /// </summary>
     public class PlayerFireSystem : FireSystemBase
     {
-        // °»´úª±®a¿é¤J¦æ¬°¡GÁä½L¡A·Æ¹«¡AÄ²±±»P·n±ì
+        // åµæ¸¬ç©å®¶è¼¸å…¥è¡Œç‚ºï¼šéµç›¤ï¼Œæ»‘é¼ ï¼Œè§¸æ§èˆ‡æ–æ¡¿
         private void Update()
         {
-            // ¦pªG ª±®a«ö¤U Z Áä ´N¥Í¦¨¤l¼u
+            // å¦‚æœ ç©å®¶æŒ‰ä¸‹ Z éµ å°±ç”Ÿæˆå­å½ˆ
             if (Input.GetKeyDown(KeyCode.Z))
             {
-                //©I¥s¤èªk
+                //å‘¼å«æ–¹æ³•
                 SpawnBullet();
             }
         }

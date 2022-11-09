@@ -1,24 +1,24 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 namespace Ritsuki
 {
     /// <summary>
-    /// µo®g¨t²Î°ò©³
+    /// ç™¼å°„ç³»çµ±åŸºåº•
     /// </summary>
     public class FireSystemBase : MonoBehaviour
     {
-        [SerializeField, Header("¤l¼u¹w»sª«")]
+        [SerializeField, Header("å­å½ˆé è£½ç‰©")]
         private GameObject prefabBullet;
-        [SerializeField, Header("¤l¼u¥Í¦¨ÂI")]
+        [SerializeField, Header("å­å½ˆç”Ÿæˆé»")]
         private Transform pointSpawn;
 
-        // ¦Û­q¤èªk
-        // ¤l¼u¥Í¦¨
-        // «OÅ@¯Å§O¡G¤¹³\¤lÃş§O¦s¨ú
+        // è‡ªè¨‚æ–¹æ³•
+        // å­å½ˆç”Ÿæˆ
+        // ä¿è­·ç´šåˆ¥ï¼šå…è¨±å­é¡åˆ¥å­˜å–
         protected void SpawnBullet() 
         {
-        // ¹ê¨Ò¤Æ(¥Í¦¨ª«¥ó¡A®y¼Ğ¡A¨¤«×);
-        // ¥Í¦¨ ¤l¼u¹w»sª« ®y¼Ğ»P¨¤«×¸ò¥Í¦¨ÂI¬Û¦P
+        // å¯¦ä¾‹åŒ–(ç”Ÿæˆç‰©ä»¶ï¼Œåº§æ¨™ï¼Œè§’åº¦);
+        // ç”Ÿæˆ å­å½ˆé è£½ç‰© åº§æ¨™èˆ‡è§’åº¦è·Ÿç”Ÿæˆé»ç›¸åŒ
         Instantiate(prefabBullet, pointSpawn.position, pointSpawn.rotation);
         }
     }
