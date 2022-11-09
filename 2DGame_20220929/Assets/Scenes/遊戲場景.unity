@@ -443,6 +443,66 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &329169500
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 329169502}
+  - component: {fileID: 329169501}
+  m_Layer: 0
+  m_Name: "\u5B78\u7FD2\u6B04\u4F4D"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &329169501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329169500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07f970f3f9e26af40b9a67c93080901d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  countProp: 7
+  speed: 3.5
+  jump: 7.7
+  namePlayer: "\u5C0F\u9A0E\u58EB"
+  content: "\u55E8\uFF0C\u4F60\u597D~"
+  inPass: 1
+  inDead: 0
+  weaponCount: 10
+  propName: "\u7D05\u8272\u85E5\u6C34"
+  Score: 60
+  walkSpeed: 3.7
+  weaponPlayer: "\u6253\u706B\u6A5F"
+  password: 1@3a978321
+  number: 77
+  isOpen: 0
+--- !u!4 &329169502
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329169500}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &390864317
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,6 +515,7 @@ GameObject:
   - component: {fileID: 390864318}
   - component: {fileID: 390864321}
   - component: {fileID: 390864320}
+  - component: {fileID: 390864322}
   m_Layer: 0
   m_Name: "\u73A9\u5BB6"
   m_TagString: Untagged
@@ -566,6 +627,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &390864322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390864317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d3fa8e14d7b2db4abaa9e7616ea02d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedVertical: 3.5
+  speedHorizontal: 4
+  pictureUp: {fileID: 21300000, guid: 10af89f5b9af24605a83d05e21dfdeb5, type: 3}
+  pictureMIddle: {fileID: 21300000, guid: 4f3ca6c2ba5724c4c90aee322cf79137, type: 3}
+  pictureDown: {fileID: 21300000, guid: 65019c4b741d6493d97d4072eff8e23b, type: 3}
 --- !u!1 &485991628
 GameObject:
   m_ObjectHideFlags: 0
@@ -2329,10 +2407,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1908144167}
   - component: {fileID: 1908144166}
-  - component: {fileID: 1908144171}
-  - component: {fileID: 1908144170}
-  - component: {fileID: 1908144169}
   - component: {fileID: 1908144168}
+  - component: {fileID: 1908144169}
   m_Layer: 0
   m_Name: "\u80CC\u666F\u7269\u4EF6"
   m_TagString: Untagged
@@ -2428,33 +2504,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1908144165}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2e5ba34b42b30744b21ecc79a71976d, type: 3}
+  m_Script: {fileID: 11500000, guid: 958f8e95ebc931c4b80fe3b03d6065aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1908144170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1908144165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2e5ba34b42b30744b21ecc79a71976d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1908144171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1908144165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2e5ba34b42b30744b21ecc79a71976d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  speed: -3.5
 --- !u!1 &1916055355
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,45 +1,45 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 namespace Rin
 { 
     /// <summary>
-  /// ²Ä¤@­Ó¸}¥»
+  /// ç¬¬ä¸€å€‹è…³æœ¬
   /// 2022.10.13
   /// </summary>
     public class FirstScript : MonoBehaviour
     {
-        #region µù¸Ñ°Ï°ì
+        #region è¨»è§£å€åŸŸ
 
-        // ÁY±Æ §Ö±¶Áä¡GTab
-        // ®æ¦¡¤Æ¤å¥ó §Ö±¶Áä¡G Ctrl + K D
-        // ³æ¦æµù¸Ñ
+        // ç¸®æ’ å¿«æ·éµï¼šTab
+        // æ ¼å¼åŒ–æ–‡ä»¶ å¿«æ·éµï¼š Ctrl + K D
+        // å–®è¡Œè¨»è§£
 
-        /* ¦h¦æµù¸Ñ
+        /* å¤šè¡Œè¨»è§£
          * 
          */
 
-        // A a ¬O¤£¦Pªº¦r
+        // A a æ˜¯ä¸åŒçš„å­—
 
         #endregion
 
-        #region ¨Æ¥ó°Ï°ì
-        //³ê¿ô¨Æ¥ó¡G¹CÀ¸¶}©l®É°õ¦æ¤@¦¸
+        #region äº‹ä»¶å€åŸŸ
+        //å–šé†’äº‹ä»¶ï¼šéŠæˆ²é–‹å§‹æ™‚åŸ·è¡Œä¸€æ¬¡
         private void Awake()
         {
-            //¿é¥X(°T®§)¡G
+            //è¼¸å‡º(è¨Šæ¯)ï¼š
             print("Hello World !!");
         }
 
-        //¶}©l¨Æ¥ó¡GAwake «á°õ¦æ¤@¦¸
+        //é–‹å§‹äº‹ä»¶ï¼šAwake å¾ŒåŸ·è¡Œä¸€æ¬¡
         private void Start()
         {
-            print("<color=green> ¶}©l¨Æ¥ó </color>");
+            print("<color=green> é–‹å§‹äº‹ä»¶ </color>");
         }
 
-        //§ó·s¨Æ¥ó¡GStart ¤§«á«ùÄò¨C´V°õ¦æ¡A°õ¦æ¬ù 60 FPS
+        //æ›´æ–°äº‹ä»¶ï¼šStart ä¹‹å¾ŒæŒçºŒæ¯å¹€åŸ·è¡Œï¼ŒåŸ·è¡Œç´„ 60 FPS
         private void Update()
         {
-            print("<color=blue> §ó·s¨Æ¥ó </color>");
+            print("<color=blue> æ›´æ–°äº‹ä»¶ </color>");
         }
         #endregion
     }
