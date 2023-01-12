@@ -192,6 +192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabBullet: {fileID: 8911119420486105454, guid: c202312f05be90e48bceee86bce5b5b5, type: 3}
   pointSpawn: {fileID: 1124594955126258091}
+  soundFire: {fileID: 8300000, guid: 033b1daf4512444018111f90f909d172, type: 3}
   interval: 0.5
 --- !u!114 &13485432
 MonoBehaviour:
@@ -207,3 +208,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   perfabExplosion: {fileID: 2127708003289172069, guid: 025e207d782c7ec4996d38a7025d91a2, type: 3}
   nameTarget: "\u5B50\u5F48"
+  soundHit: {fileID: 8300000, guid: 5a734bcdccebe4d0aa169e4bc43d5210, type: 3}
+  soundExplosion: {fileID: 8300000, guid: eeac7ff7e4ad44587b11429a7e7b8fc1, type: 3}
